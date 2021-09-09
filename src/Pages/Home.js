@@ -125,7 +125,7 @@ const Home = (props) => {
         {console.log(ads)}
 
         <h4 className=" pt-3">
-          With delivery at your house pickup point everything is at your
+          Nous delivrons your house pickup point everything is at your
           fingertips!
         </h4>
         <p className="pt-2 d-none d-sm-block">
