@@ -1,6 +1,6 @@
 import axios from "axios";
-// let url = "http://localhost:3001";
-let url = "https://adsbackend2.herokuapp.com";
+let url = "http://localhost:3001";
+// let url = "https://adsbackend2.herokuapp.com";
 
 const signupUser = async (data) => {
   console.log(data);
@@ -15,6 +15,27 @@ const emailVerification = async (otp, email) => {
 
   let res = await axios.post(`${url}/api/users/register/emailverify`, {
     otp,
+    email,
+  });
+  console.log(res);
+  return res;
+};
+
+const requestForgotOtp = async (email) => {
+  console.log(email);
+
+  let res = await axios.post(`${url}/api/users/register/requestforgototp`, {
+    email,
+  });
+  console.log(res);
+  return res;
+};
+
+const sendNewPassword = async (newPassword, email) => {
+  console.log(newPassword);
+
+  let res = await axios.post(`${url}/api/users/register/sendnewpassword`, {
+    newPassword,
     email,
   });
   console.log(res);
@@ -109,4 +130,6 @@ export {
   setPopupView,
   requestEmailOtp,
   requestPhoneOtp,
+  requestForgotOtp,
+  sendNewPassword,
 };

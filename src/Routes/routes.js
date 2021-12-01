@@ -14,6 +14,7 @@ import Editad from "../Pages/EditAd";
 import Showad from "../Pages/Showad";
 import Sendmessage from "../Pages/Sendmessage";
 import Messages from "../Pages/Messages";
+import Forgot from "../Pages/Forgot";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router, Redirect } from "react-router-dom";
 // import Footer from "../Components/Footer";
@@ -106,6 +107,7 @@ export const UnAuthenticatedRoutes = () => {
           <Route exact path="/" render={(routeProps) => <Home />} />
           <Route exact path="/signup" render={(routeProps) => <Signup />} />
           <Route exact path="/login" render={(routeProps) => <Login />} />
+          <Route exact path="/forgot" render={(routeProps) => <Forgot />} />
           <Route
             exact
             path="/search"
