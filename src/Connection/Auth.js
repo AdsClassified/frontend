@@ -1,6 +1,6 @@
 import axios from "axios";
-let url = "http://localhost:3001";
-// let url = "https://adsbackend2.herokuapp.com";
+// let url = "http://localhost:3001";
+let url = "https://adsbackend2.herokuapp.com";
 
 const signupUser = async (data) => {
   console.log(data);
