@@ -44,7 +44,7 @@ const Forgot = () => {
     if (window.localStorage.getItem("otp") === otp) {
       // console.log("in iffffffffff");
       setVerified(true);
-      toast.success("OTP sent to your Email", {
+      toast.success("OTP Verified", {
         position: toast.POSITION.TOP_RIGHT,
       });
     } else {
