@@ -125,8 +125,8 @@ const Home = (props) => {
         {console.log(ads)}
 
         <h4 className=" pt-3">
-          Nous delivrons your house pickup point everything is at your
-          fingertips!
+          Achetez ce dont vous avez besoin et vendez ce que vous 
+          n'utilisez plus!
         </h4>
         <p className="pt-2 d-none d-sm-block">
           Find the right deal among the millions of leboncoin classifieds
